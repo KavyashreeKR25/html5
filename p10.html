@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANVAS</title>
+</head>
+<body>
+    <center>
+        <h1>This is CANVAS TAG</h1>
+        <p>
+            The HTML canvas element provides HTML a bitmaps surfaces to work with.It is used to draw graphics on the web page.
+            The<b>HTML-5 canvas tag</b> is used to draw graphics using scripting language like Javascript.
+        </p>
+    </center>
+    <hr>
+    <canvas>This is first Canvas Tag</canvas>
+    <canvas id="myCanvas2" width="300px" height="100px" style="border:2px solid red;"></canvas>
+    <p><b>Note:It is always necessary to specify the id attribute and the height and width attribute to define the size of the canvas. You can have multiple canvas elements on one HTML page.</b></p>
+    <hr>
+    <canvas id="myCanvas3" width="250px" height="150px" style="border:1px solid blue;"></canvas>
+    <script>
+        let canvas1=document.getElementById("myCanvas3").getContext("2d");
+        canvas1.fillStyle="red";
+        canvas1.fillRect(25,25,100,100);
+    </script>
+    <hr>
+    <center>
+        <h3>Drawing Circle on Canvas</h3>
+    </center>
+    <canvas id="myCanvasCircle" width="200" height="200" style="border:1px solid green"></canvas>
+    <script>
+        let canvas2 = document.getElementById("myCanvasCircle").getContext("2d");
+        canvas2.fillStyle="red";
+        canvas2.arc(100,100,90,0,2*Math.PI);
+        canvas2.fill();
+        canvas2.stroke();
+    </script>
+     <hr>
+     <center>
+            <h3>Drawing text on Canvas</h3>
+     </center>
+     <canvas id="myCanvas" width="578" height="200" style="border:1px solid red;"></canvas>
+     <script>
+           let canvas3 = document.getElementById("myCanvas").getContext("2d");
+          canvas3.font="40pt Times New Roman";
+         canvas3.fillStyle="blue";
+         canvas3.fillText('Hello HTML-5',150,100);
+     </script>
+    
+</body>
+</html>

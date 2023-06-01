@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-5</title>
+    <style>
+        dialog{
+            background-color: navy;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>SEMANTIC ELEMENTS..!</h1>
+        <p><b>In any language, it is essential understand the meaning of words during communication.</b></p>
+        <h2>Why to use sematic elements?</h2>
+    </center>
+    <details>
+        <h1>HTML</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam id vero modi suscipit in nesciunt, provident ipsum quaerat obcaecati natus dolor sapiente possimus quisquam unde est architecto praesentium optio pariatur.
+        </p>
+    </details>
+    <details>
+        <h1>CSS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos repudiandae, dolores voluptatem veniam minima, possimus porro, doloribus iste itaque eveniet maxime enim. Laboriosam pariatur aut veniam, non magnam ipsa at?</p>
+    </details>
+    <details>
+        <h1>JS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, praesentium qui repudiandae placeat unde illo, dignissimos adipisci sit quos consequatur odio, totam alias a enim modi. Reiciendis ratione reprehenderit assumenda!</p>
+    </details>
+    <hr>
+    <center>
+        <h3>This is SUMMERY TAG</h3>
+        <p>The <b>HTML SUMMERY</b> tag is used with <b>DETAILS</b>tag. It is used as a  summery, caption or legend for the content of a details element.</p>
+    </center>
+    <hr>
+    <details>
+        <summary>HTML</summary>
+        <h1>HTML</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero nemo non consequuntur et fuga ullam ut enim? Facere aperiam dicta, voluptates quos autem, commodi expedita voluptate voluptatibus, culpa in at!</p>
+    </details>
+    <details>
+        <summary>CSS</summary>
+        <h1>CSS</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero nemo non consequuntur et fuga ullam ut enim? Facere aperiam dicta, voluptates quos autem, commodi expedita voluptate voluptatibus, culpa in at!</p>
+    </details>
+    <details>
+        <summary>JS</summary>
+        <h1>JS</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero nemo non consequuntur et fuga ullam ut enim? Facere aperiam dicta, voluptates quos autem, commodi expedita voluptate voluptatibus, culpa in at!</p>
+    </details>
+    <hr>
+    <center>
+        <h3>TIME TAG..!</h3>
+        <p> <b>HTML time</b> tag is used to define date and time. It displays time value in a 24 hour  clock or a precise date in a Gregorian calendar in HTML.</p>
+    </center>
+    <hr>
+    <p>Lorem ipsum dolor sit amet 5:30 PM consectetur adipisicing elit. Corrupti fuga repellendus cupiditate quaerat esse? Aspernatur velit provident iusto dignissimos odit dicta vitae consequuntur officiis accusantium repudiandae maxime nisi, corrupti excepturi.</p>
+    <p>We open our office at<time>09:30</time>PM</p>
+    <hr>
+    <center>
+        <h3>This is DAILOG TAG</h3>
+        <p><b>(This tag to create a new popup dialog on a web page.)</b></p> 
+    </center>
+    <dialog id="dialog">
+        <button type="button" id="btn2">&times;</button>
+        <h1>WELCOME TO HTML-5</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero qui veritatis rem, quo recusandae hic. Repudiandae, quis voluptatibus, blanditiis totam ex minima amet suscipit cumque ratione voluptates ipsum reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, aliquam ab voluptatem natus quae facere quis dolor quasi numquam accusantium blanditiis rerum id! Ratione dolorem id quis harum! Necessitatibus, est?    
+        </p>
+    </dialog>
+    <button type="button" id="btn1">Open Dailog</button>
+    <script>
+        document.getElementById("btn1").onclick=function(){
+            document.getElementById("dialog").show();
+        }
+        document.getElementById("btn2").onclick=function(){
+            document.getElementById("dialog").close();
+        }
+    </script>
+</body>
+</html>
